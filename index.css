@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    min-width: 300px;
+    min-height: 350px;
+    position: relative;
+    margin: 20px;  
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%; 
+}
+
+.circle-clock {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 50px;
+        
+}
+
+.circle-red {
+    background-color: red;
+}
+
+.circle-orange {
+    background-color: orange;
+}
+
+.circle-yellow {
+    background-color: yellow;
+}
+
+
+.circle-green {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+   
+    background-color: green;
+}
+
+.line {
+    position: absolute;
+    border-radius: 3px;
+    transform-origin: 0 0;
+}
+
+.sec-line {
+    width: 110px;
+    border: 1px blue solid;
+    z-index: 3;
+}
+
+.min-line {
+    width: 100px;
+    border: 4px rgb(24, 24, 25) solid;
+    z-index: 2;
+}
+
+.hr-line {
+    width: 70px;
+    border: 5px rgb(0, 0, 0) solid;
+    z-index: 1;
+}
+
+.btns {
+    margin: 0 auto;
+}
+
+.stop,
+.start {
+    cursor: pointer;
+}
